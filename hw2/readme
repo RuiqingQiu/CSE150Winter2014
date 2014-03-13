@@ -1,0 +1,230 @@
+CSE 150 Winter 2014
+Author: Ruiqing Qiu
+PID: A98022702
+TA: Vineel
+File: Readme
+Description: This file contains some sample output from the hw2.java
+that works as a zip code guessing machine based on predictive probability
+
+Some sample output:
+1. Using Y to enter my own guess rather than the suggesting guess
+raymondqiu@Raymond-Qius-MacBook-Pro:~/Desktop/CSE 150/hw2$ java hw2
+Total Population: 308739931
+The five most populated zip codes are: 
+zip code: 60629 with population 113916
+zip code: 79936 with population 111086
+zip code: 11368 with population 109931
+zip code: 90650 with population 105549
+zip code: 90011 with population 103892
+Which mode do you want? 
+Y for enter you own or X for suggested guess
+Y
+0: 0.5707657134897786
+1: 0.46760694845138123
+2: 0.4396177344484799
+3: 0.43416032570143964
+4: 0.3987752462119971
+5: 0.3728835678207106
+6: 0.34680892961655807
+7: 0.3763561571826613
+8: 0.33722947227062766
+9: 0.34702290906452266
+
+The next guess is : 0
+with probability: 0.5707657134897786
+Zip code: -1 -1 -1 -1 -1 
+Enter you guessed digit and its position:
+(For example, 0 1 to indicate it's 0 at the first position)
+(Or, 2 -1 to indicate a wrong guess)
+0 1 3 5
+0 -1 0 -1 0 
+0: 0.0
+1: 0.28359908087386915
+2: 0.1264833355943202
+3: 0.1643182704988763
+4: 0.1645686106958199
+5: 0.12316178270191197
+6: 0.32647438488336805
+7: 0.40609095880295426
+8: 0.22475934475201637
+9: 0.08972108745543876
+
+
+The next guess is : 7
+with probability: 0.40609095880295426
+Zip code: 0 -1 0 -1 0 
+Enter you guessed digit and its position:
+(For example, 0 1 to indicate it's 0 at the first position)
+(Or, 2 -1 to indicate a wrong guess)
+7 4
+0 -1 0 7 0 
+0: 0.0
+1: 0.01821604401969302
+2: 0.0
+3: 0.15215754416449465
+4: 0.0
+5: 0.014016796988126268
+6: 0.43741673906747763
+7: 0.0
+8: 0.37819287576020855
+9: 0.0
+
+
+The next guess is : 6
+with probability: 0.43741673906747763
+Zip code: 0 -1 0 7 0 
+Enter you guessed digit and its position:
+(For example, 0 1 to indicate it's 0 at the first position)
+(Or, 2 -1 to indicate a wrong guess)
+6 2
+0 6 0 7 0 
+The zip code is: 
+06070
+
+
+2. Using X command to use suggesting guess to guess user's zip code
+raymondqiu@Raymond-Qius-MacBook-Pro:~/Desktop/CSE 150/hw2$ java hw2
+Total Population: 308739931
+The five most populated zip codes are: 
+zip code: 60629 with population 113916
+zip code: 79936 with population 111086
+zip code: 11368 with population 109931
+zip code: 90650 with population 105549
+zip code: 90011 with population 103892
+Which mode do you want? 
+Y for enter you own or X for suggested guess
+X
+0.5707657134897786
+0.46760694845138123
+0.4396177344484799
+0.43416032570143964
+0.3987752462119971
+0.3728835678207106
+0.34680892961655807
+0.3763561571826613
+0.33722947227062766
+0.34702290906452266
+Where is digit 0? (Enter position range from 1 - 5, separated by space) or -1 to indicate none): 1 3 5
+0-10-10
+0: 0.0
+1: 0.28359908087386915
+2: 0.1264833355943202
+3: 0.1643182704988763
+4: 0.1645686106958199
+5: 0.12316178270191197
+6: 0.32647438488336805
+7: 0.40609095880295426
+8: 0.22475934475201637
+9: 0.08972108745543876
+Where is digit 7? (Enter position range from 1 - 5, separated by space) or -1 to indicate none): 4
+0-1070
+0: 0.0
+1: 0.01821604401969302
+2: 0.0
+3: 0.15215754416449465
+4: 0.0
+5: 0.014016796988126268
+6: 0.43741673906747763
+7: 0.0
+8: 0.37819287576020855
+9: 0.0
+Where is digit 6? (Enter position range from 1 - 5, separated by space) or -1 to indicate none): 2
+06070
+the zip code is: 
+06070
+
+
+Question (a): 
+The five most populated zip codes are: 
+zip code: 60629 with population 113916
+zip code: 79936 with population 111086
+zip code: 11368 with population 109931
+zip code: 90650 with population 105549
+zip code: 90011 with population 103892
+
+Question (b):
+(i): 
+0: 0.5707657134897786
+1: 0.46760694845138123
+2: 0.4396177344484799
+3: 0.43416032570143964
+4: 0.3987752462119971
+5: 0.3728835678207106
+6: 0.34680892961655807
+7: 0.3763561571826613
+8: 0.33722947227062766
+9: 0.34702290906452266
+
+
+The next guess is : 0
+with probability: 0.5707657134897786
+Zip code: -1 -1 -1 -1 -1 
+
+(ii):
+
+0: 0.0
+1: 0.5718408127690436
+2: 0.5642410731476435
+3: 0.0
+4: 0.5167111057441929
+5: 0.48409757704840006
+6: 0.4069155074310836
+7: 0.45902960993431463
+8: 0.41608866892002516
+9: 0.45125308291427196
+
+
+The next guess is : 1
+with probability: 0.5718408127690436
+Zip code: -1 -1 -1 -1 -1 
+
+(iii):
+0: 0.5798518053805237
+1: 0.32307387045628133
+2: 0.394954620136638
+3: 0.3124019745422726
+4: 0.28600228565558516
+5: 0.0
+6: 0.21173529442337946
+7: 0.24708438275987102
+8: 0.2611612206550379
+9: 0.0
+
+
+The next guess is : 0
+with probability: 0.5798518053805237
+Zip code: 9 -1 -1 -1 5 
+
+(iv):
+0: 0.39936096151007366
+1: 0.08998442879387439
+2: 0.0
+3: 0.0
+4: 0.5989533482855007
+5: 0.2054851597358133
+6: 0.1736141864640029
+7: 0.0
+8: 0.2171873735137117
+9: 0.0
+
+
+The next guess is : 4
+with probability: 0.5989533482855007
+Zip code: 7 7 -1 -1 9 
+
+(v):
+0: 0.0
+1: 0.6923649371197008
+2: 0.0
+3: 0.0
+4: 0.0
+5: 0.0
+6: 0.0
+7: 0.0
+8: 0.0
+9: 0.409225362241803
+
+
+The next guess is : 1
+with probability: 0.6923649371197008
+Zip code: -1 -1 2 0 8 

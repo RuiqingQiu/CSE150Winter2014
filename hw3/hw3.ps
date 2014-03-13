@@ -1,0 +1,1009 @@
+%!PS-Adobe-3.0
+%%Title: hw3.py
+%%For: raymondqiu
+%%Creator: VIM - Vi IMproved 7.3 (2010 Aug 15)
+%%CreationDate: Sun Feb  2 22:11:59 2014
+%%DocumentData: Clean8Bit
+%%Orientation: Portrait
+%%Pages: (atend)
+%%PageOrder: Ascend
+%%BoundingBox: 59 49 564 800
+%%DocumentMedia: A4 595 842 0 () ()
+%%DocumentNeededResources: font Courier
+%%+ font Courier-Bold
+%%+ font Courier-Oblique
+%%+ font Courier-BoldOblique
+%%DocumentSuppliedResources: procset VIM-Prolog 1.4 1
+%%+ encoding VIM-latin1 1.0 0
+%%Requirements: duplex collate color
+%%EndComments
+%%BeginDefaults
+%%PageResources: font Courier
+%%+ font Courier-Bold
+%%+ font Courier-Oblique
+%%+ font Courier-BoldOblique
+%%PageMedia: A4
+%%EndDefaults
+%%BeginProlog
+%%BeginResource: procset VIM-Prolog
+%%BeginDocument: /usr/share/vim/vim73/print/prolog.ps
+%!PS-Adobe-3.0 Resource-ProcSet
+%%Title: VIM-Prolog
+%%Version: 1.4 1
+%%EndComments
+% Editing of this file is NOT RECOMMENDED.  You run a very good risk of causing
+% all PostScript printing from VIM failing if you do.  PostScript is not called
+% a write-only language for nothing!
+/packedarray where not{userdict begin/setpacking/pop load def/currentpacking
+false def end}{pop}ifelse/CP currentpacking def true setpacking
+/bd{bind def}bind def/ld{load def}bd/ed{exch def}bd/d/def ld
+/db{dict begin}bd/cde{currentdict end}bd
+/T true d/F false d
+/SO null d/sv{/SO save d}bd/re{SO restore}bd
+/L2 systemdict/languagelevel 2 copy known{get exec}{pop pop 1}ifelse 2 ge d
+/m/moveto ld/s/show ld /ms{m s}bd /g/setgray ld/r/setrgbcolor ld/sp{showpage}bd
+/gs/gsave ld/gr/grestore ld/cp/currentpoint ld
+/ul{gs UW setlinewidth cp UO add 2 copy newpath m 3 1 roll add exch lineto
+stroke gr}bd
+/bg{gs r cp BO add 4 -2 roll rectfill gr}bd
+/sl{90 rotate 0 exch translate}bd
+L2{
+/sspd{mark exch{setpagedevice}stopped cleartomark}bd
+/nc{1 db/NumCopies ed cde sspd}bd
+/sps{3 db/Orientation ed[3 1 roll]/PageSize ed/ImagingBBox null d cde sspd}bd
+/dt{2 db/Tumble ed/Duplex ed cde sspd}bd
+/c{1 db/Collate ed cde sspd}bd
+}{
+/nc{/#copies ed}bd
+/sps{statusdict/setpage get exec}bd
+/dt{statusdict/settumble 2 copy known{get exec}{pop pop pop}ifelse
+statusdict/setduplexmode 2 copy known{get exec}{pop pop pop}ifelse}bd
+/c{pop}bd
+}ifelse
+/ffs{findfont exch scalefont d}bd/sf{setfont}bd
+/ref{1 db findfont dup maxlength dict/NFD ed{exch dup/FID ne{exch NFD 3 1 roll
+put}{pop pop}ifelse}forall/Encoding findresource dup length 256 eq{NFD/Encoding
+3 -1 roll put}{pop}ifelse NFD dup/FontType get 3 ne{/CharStrings}{/CharProcs}
+ifelse 2 copy known{2 copy get dup maxlength dict copy[/questiondown/space]{2
+copy known{2 copy get 2 index/.notdef 3 -1 roll put pop exit}if pop}forall put
+}{pop pop}ifelse dup NFD/FontName 3 -1 roll put NFD definefont pop end}bd
+CP setpacking
+(\004)cvn{}bd
+% vim:ff=unix:
+%%EOF
+%%EndDocument
+%%EndResource
+%%BeginResource: encoding VIM-latin1
+%%BeginDocument: /usr/share/vim/vim73/print/latin1.ps
+%!PS-Adobe-3.0 Resource-Encoding
+%%Title: VIM-latin1
+%%Version: 1.0 0
+%%EndComments
+/VIM-latin1[
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/space /exclam /quotedbl /numbersign /dollar /percent /ampersand /quotesingle
+/parenleft /parenright /asterisk /plus /comma /minus /period /slash
+/zero /one /two /three /four /five /six /seven
+/eight /nine /colon /semicolon /less /equal /greater /question
+/at /A /B /C /D /E /F /G
+/H /I /J /K /L /M /N /O
+/P /Q /R /S /T /U /V /W
+/X /Y /Z /bracketleft /backslash /bracketright /asciicircum /underscore
+/grave /a /b /c /d /e /f /g
+/h /i /j /k /l /m /n /o
+/p /q /r /s /t /u /v /w
+/x /y /z /braceleft /bar /braceright /asciitilde /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/space /exclamdown /cent /sterling /currency /yen /brokenbar /section
+/dieresis /copyright /ordfeminine /guillemotleft /logicalnot /hyphen /registered /macron
+/degree /plusminus /twosuperior /threesuperior /acute /mu /paragraph /periodcentered
+/cedilla /onesuperior /ordmasculine /guillemotright /onequarter /onehalf /threequarters /questiondown
+/Agrave /Aacute /Acircumflex /Atilde /Adieresis /Aring /AE /Ccedilla
+/Egrave /Eacute /Ecircumflex /Edieresis /Igrave /Iacute /Icircumflex /Idieresis
+/Eth /Ntilde /Ograve /Oacute /Ocircumflex /Otilde /Odieresis /multiply
+/Oslash /Ugrave /Uacute /Ucircumflex /Udieresis /Yacute /Thorn /germandbls
+/agrave /aacute /acircumflex /atilde /adieresis /aring /ae /ccedilla
+/egrave /eacute /ecircumflex /edieresis /igrave /iacute /icircumflex /idieresis
+/eth /ntilde /ograve /oacute /ocircumflex /otilde /odieresis /divide
+/oslash /ugrave /uacute /ucircumflex /udieresis /yacute /thorn /ydieresis]
+/Encoding defineresource pop
+% vim:ff=unix:
+%%EOF
+%%EndDocument
+%%EndResource
+%%EndProlog
+%%BeginSetup
+595 842 0 sps
+1 nc
+T F dt
+T c
+%%IncludeResource: font Courier
+/_F0 /VIM-latin1 /Courier ref
+/F0 10 /_F0 ffs
+%%IncludeResource: font Courier-Bold
+/_F1 /VIM-latin1 /Courier-Bold ref
+/F1 10 /_F1 ffs
+%%IncludeResource: font Courier-Oblique
+/_F2 /VIM-latin1 /Courier-Oblique ref
+/F2 10 /_F2 ffs
+%%IncludeResource: font Courier-BoldOblique
+/_F3 /VIM-latin1 /Courier-BoldOblique ref
+/F3 10 /_F3 ffs
+/UO -1 d
+/UW 0.5 d
+/BO -2.5 d
+%%EndSetup
+%%Page: 1 1
+%%BeginPageSetup
+sv
+0 g
+F0 sf
+%%EndPageSetup
+F1 sf
+(hw3.py                                                                        Page 1)59.5 792.4 ms
+F0 sf
+0.376 0 0.376 r
+('''     )59.5 772.4 ms
+(     Name: Ruiqing Qiu)59.5 762.4 ms
+(     PID: A98022702)59.5 752.4 ms
+(     Userid: rqiu)59.5 742.4 ms
+(     filename: hw3.py)59.5 732.4 ms
+(''')59.5 722.4 ms
+0.251 0.251 0 r
+(import)59.5 712.4 ms
+0 g
+( matplotlib.pyplot as plt)s
+0.251 0.251 0 r
+(import)59.5 702.4 ms
+0 g
+( math)s
+(# A list to keep track of all vocabulary)59.5 692.4 ms
+(vocab = [])59.5 682.4 ms
+(# A list to keep track all the frequency of the vocab in unigram)59.5 672.4 ms
+(unigram = [])59.5 662.4 ms
+(#Line number 500)59.5 652.4 ms
+(lineNumber = )59.5 642.4 ms
+0.376 0 0.376 r
+(500)s
+0 g
+(# Total number of frequency in unigram)59.5 632.4 ms
+(total = )59.5 622.4 ms
+0.376 0 0.376 r
+(0)s
+0 g
+(AWordsProb = [])59.5 612.4 ms
+(#Open vocab.txt and put them into the list)59.5 592.4 ms
+(with )59.5 582.4 ms
+0 0 0.376 r
+(open)s
+0 g
+( \()s
+0.376 0 0.376 r
+('vocab.txt')s
+0 g
+(\) as vocabFile:)s
+(  for line in vocabFile:)59.5 572.4 ms
+(    tmp = line.split\(\))59.5 562.4 ms
+(    vocab.append\(tmp[)59.5 552.4 ms
+0.376 0 0.376 r
+(0)s
+0 g
+(]\))s
+(#Open unigrams.txt and put them into the list)59.5 542.4 ms
+(with )59.5 532.4 ms
+0 0 0.376 r
+(open)s
+0 g
+( \()s
+0.376 0 0.376 r
+('unigram.txt')s
+0 g
+(\) as unigramFile:)s
+(  for line in unigramFile:)59.5 522.4 ms
+(    tmp = line.split\(\))59.5 512.4 ms
+(    unigram.append\(tmp[)59.5 502.4 ms
+0.376 0 0.376 r
+(0)s
+0 g
+(]\))s
+0 0 0.376 r
+(print)59.5 482.4 ms
+0 g
+( )s
+0.376 0 0.376 r
+("3.3 Part A, all words start with A and probability: ")s
+0 g
+(index = )59.5 472.4 ms
+0.376 0 0.376 r
+(1)s
+0 g
+(#Getting the total number)59.5 452.4 ms
+(for freq in unigram:)59.5 442.4 ms
+(    total += )59.5 432.4 ms
+0 0 0.376 r
+(int)s
+0 g
+(\(freq\))s
+0 0 0.376 r
+(print)59.5 422.4 ms
+0 g
+( )s
+0.376 0 0.376 r
+("Total is %d")s
+0 g
+( % total)s
+(for word, freq in )59.5 412.4 ms
+0 0 0.376 r
+(zip)s
+0 g
+(\(vocab,unigram\):)s
+(    if word[)59.5 402.4 ms
+0.376 0 0.376 r
+(0)s
+0 g
+(] == )s
+0.376 0 0.376 r
+("A")s
+0 g
+(:)s
+(        )59.5 392.4 ms
+0 0 0.376 r
+(print)s
+0 g
+( )s
+0.376 0 0.376 r
+("%d, word is: ")s
+0 g
+( % index + word)s
+(        )59.5 382.4 ms
+0 0 0.376 r
+(print)s
+0 g
+( )s
+0.376 0 0.376 r
+("unigram probability is %.14f)s
+0.498 0.251 0.251 r
+(\\n)s
+0.376 0 0.376 r
+(")s
+0 g
+( % \(\()s
+0 0 0.376 r
+(float)s
+0 g
+(\(freq\)\)/total\))s
+(        AWordsProb.append\()59.5 372.4 ms
+0 0 0.376 r
+(float)s
+0 g
+(\(freq\)/total\))s
+(        index += )59.5 362.4 ms
+0.376 0 0.376 r
+(1)s
+0 0 0.376 r
+(print)59.5 342.4 ms
+0 g
+( )s
+0.376 0 0.376 r
+(")s
+0.498 0.251 0.251 r
+(\\n)s
+0.376 0 0.376 r
+(3.3 Part B, ten most likely words to follow )s
+0.498 0.251 0.251 r
+(\\")s
+0.376 0 0.376 r
+(THE)s
+0.498 0.251 0.251 r
+(\\")s
+0.376 0 0.376 r
+(.")s
+0 g
+(#find the word THE in vocab)59.5 332.4 ms
+(THEindex = )59.5 322.4 ms
+0.376 0 0.376 r
+(0)s
+0 g
+(wordsFollowTHE = [])59.5 312.4 ms
+(wordsFollowTHEFreq = [])59.5 302.4 ms
+(for word in vocab:)59.5 292.4 ms
+(    if word == )59.5 282.4 ms
+0.376 0 0.376 r
+("THE")s
+0 g
+(:)s
+(        )59.5 272.4 ms
+0 0 0.376 r
+(print)s
+0 g
+( )s
+0.376 0 0.376 r
+(")s
+0.498 0.251 0.251 r
+(\\")s
+0.376 0 0.376 r
+(THE)s
+0.498 0.251 0.251 r
+(\\")s
+0.376 0 0.376 r
+( is at index %d of the file")s
+0 g
+( % THEindex)s
+(        break)59.5 262.4 ms
+(    THEindex += )59.5 252.4 ms
+0.376 0 0.376 r
+(1)s
+0 0 0.376 r
+(print)59.5 242.4 ms
+0 g
+( vocab[THEindex])s
+(with )59.5 232.4 ms
+0 0 0.376 r
+(open)s
+0 g
+( \()s
+0.376 0 0.376 r
+('bigram.txt')s
+0 g
+(\) as bigramFile:)s
+(  for line in bigramFile:)59.5 222.4 ms
+(      tmp = line.split\(\))59.5 212.4 ms
+(      previousWord = tmp[)59.5 202.4 ms
+0.376 0 0.376 r
+(0)s
+0 g
+(])s
+(      if previousWord == )59.5 192.4 ms
+0.376 0 0.376 r
+("4")s
+0 g
+(:)s
+(        currentWord = tmp[)59.5 182.4 ms
+0.376 0 0.376 r
+(1)s
+0 g
+(])s
+(        wordsFollowTHE.append\(currentWord\))59.5 172.4 ms
+(        frequency = tmp[)59.5 162.4 ms
+0.376 0 0.376 r
+(2)s
+0 g
+(])s
+(        wordsFollowTHEFreq.append\(frequency\))59.5 152.4 ms
+(      if previousWord == )59.5 142.4 ms
+0.376 0 0.376 r
+("5")s
+0 g
+(:)s
+(          break)59.5 132.4 ms
+(THETotal = )59.5 122.4 ms
+0.376 0 0.376 r
+(0)s
+0 g
+(for freq in wordsFollowTHEFreq:)59.5 112.4 ms
+(    THETotal += )59.5 102.4 ms
+0 0 0.376 r
+(int)s
+0 g
+(\(freq\))s
+0 0 0.376 r
+(print)59.5 92.4 ms
+0 g
+( )s
+0.376 0 0.376 r
+("Count of THE is : %d")s
+0 g
+( % THETotal)s
+(TupleList = [])59.5 72.4 ms
+(for words,freq in )59.5 62.4 ms
+0 0 0.376 r
+(zip)s
+0 g
+(\(wordsFollowTHE, wordsFollowTHEFreq\):)s
+(    TupleList.append\(\()59.5 52.4 ms
+0 0 0.376 r
+(int)s
+0 g
+( \(freq\), )s
+0 0 0.376 r
+(int)s
+0 g
+(\(words\)\)\))s
+re sp
+%%PageTrailer
+%%Page: 2 2
+%%BeginPageSetup
+sv
+0 g
+F0 sf
+%%EndPageSetup
+F1 sf
+(hw3.py                                                                        Page 2)59.5 792.4 ms
+F0 sf
+(#reverse sort the tuple list)59.5 772.4 ms
+(TupleList.sort\(reverse=)59.5 762.4 ms
+0 0 0.376 r
+(True)s
+0 g
+(\))s
+(#Count to get the top 10 elements)59.5 742.4 ms
+(count = )59.5 732.4 ms
+0.376 0 0.376 r
+(1)s
+0 g
+(for item in TupleList:)59.5 722.4 ms
+(    if count == )59.5 712.4 ms
+0.376 0 0.376 r
+(11)s
+0 g
+(:)s
+(        break)59.5 702.4 ms
+(    else:)59.5 692.4 ms
+(        )59.5 682.4 ms
+0 0 0.376 r
+(print)s
+0 g
+( )s
+0.376 0 0.376 r
+("%d : the vocabulary is %s")s
+0 g
+( % \(count, vocab[item[)s
+0.376 0 0.376 r
+(1)s
+0 g
+(]-)s
+0.376 0 0.376 r
+(1)s
+0 g
+(]\) )s
+(        )59.5 672.4 ms
+0 0 0.376 r
+(print)s
+0 g
+( )s
+0.376 0 0.376 r
+("the bigram probability %.14f)s
+0.498 0.251 0.251 r
+(\\n)s
+0.376 0 0.376 r
+(")s
+0 g
+( % \(item[)s
+0.376 0 0.376 r
+(0)s
+0 g
+(]/)s
+0 0 0.376 r
+(float)s
+0 g
+(\(THETotal\)\))s
+(        count += )59.5 662.4 ms
+0.376 0 0.376 r
+(1)s
+0 0 0.376 r
+(print)59.5 642.4 ms
+0 g
+( )s
+0.376 0 0.376 r
+(")s
+0.498 0.251 0.251 r
+(\\n)s
+0.376 0 0.376 r
+(3.3 Part c, comparing Log-likelihood of unigram and bigram")s
+0 g
+(sentence = )59.5 632.4 ms
+0.376 0 0.376 r
+("THE STOCK MARKET FELL BY ONE HUNDRED POINTS LAST WEEK")s
+0 g
+(sentenceWords = sentence.split\(\))59.5 622.4 ms
+(#Calculating unigram log-likelihood)59.5 602.4 ms
+(unigramLogProb = )59.5 592.4 ms
+0.376 0 0.376 r
+(0.0)s
+0 g
+(index = )59.5 582.4 ms
+0.376 0 0.376 r
+(0)s
+0 g
+(for word in vocab:  )59.5 572.4 ms
+(  for i in sentenceWords:)59.5 562.4 ms
+(      if i == word:)59.5 552.4 ms
+(          unigramLogProb += math.log\( \()59.5 542.4 ms
+0 0 0.376 r
+(float)s
+0 g
+( \(unigram[index]\)/total\)\) )s
+(  index += )59.5 532.4 ms
+0.376 0 0.376 r
+(1)s
+0 0 0.376 r
+(print)59.5 522.4 ms
+0 g
+( )s
+0.376 0 0.376 r
+("The unigram Log-likelihood is %.14f")s
+0 g
+( % unigramLogProb)s
+(#A function that calculates unigram probability)59.5 502.4 ms
+(def )59.5 492.4 ms
+0 0 0.376 r
+(unigramProb)s
+0 g
+( \(curr\):)s
+(  index = )59.5 482.4 ms
+0.376 0 0.376 r
+(0)s
+0 g
+(  for word in vocab:)59.5 472.4 ms
+(      if curr == word:)59.5 462.4 ms
+(          return \()59.5 452.4 ms
+0 0 0.376 r
+(float)s
+0 g
+(\(unigram[index]\)/total\))s
+(      index += )59.5 442.4 ms
+0.376 0 0.376 r
+(1)s
+0 g
+(#A function that calculates bigram probability based on curr and previous)59.5 422.4 ms
+(def )59.5 412.4 ms
+0 0 0.376 r
+(bigramProb)s
+0 g
+( \(curr, previous\):)s
+(  previousIndex = )59.5 402.4 ms
+0.376 0 0.376 r
+(1)s
+0 g
+(  wordsFollow = [])59.5 392.4 ms
+(  wordsFollowFreq = [])59.5 382.4 ms
+(  for word in vocab:)59.5 372.4 ms
+(      if word == previous:)59.5 362.4 ms
+(        #print "\\"%s\\"" %previous+" is at index %d of the file"%previousIndex)59.5 352.4 ms
+(        break)59.5 342.4 ms
+(      previousIndex += )59.5 332.4 ms
+0.376 0 0.376 r
+(1)s
+0 g
+(  with )59.5 322.4 ms
+0 0 0.376 r
+(open)s
+0 g
+(\()s
+0.376 0 0.376 r
+('bigram.txt')s
+0 g
+(\) as bigramFile:)s
+(    for line in bigramFile:)59.5 312.4 ms
+(        tmp = line.split\(\))59.5 302.4 ms
+(        previousWord = tmp[)59.5 292.4 ms
+0.376 0 0.376 r
+(0)s
+0 g
+(])s
+(        if previousWord == )59.5 282.4 ms
+0 0 0.376 r
+(str)s
+0 g
+(\(previousIndex\):)s
+(            currentWord = tmp[)59.5 272.4 ms
+0.376 0 0.376 r
+(1)s
+0 g
+(])s
+(            #print previousWord)59.5 262.4 ms
+(            #print currentWord)59.5 252.4 ms
+(            wordsFollow.append\(currentWord\))59.5 242.4 ms
+(            frequency = tmp[)59.5 232.4 ms
+0.376 0 0.376 r
+(2)s
+0 g
+(])s
+(            wordsFollowFreq.append\(frequency\))59.5 222.4 ms
+(        if previousWord == )59.5 212.4 ms
+0 0 0.376 r
+(str)s
+0 g
+(\(previousIndex+)s
+0.376 0 0.376 r
+(1)s
+0 g
+(\):)s
+(            break)59.5 202.4 ms
+(  prevTotal = )59.5 192.4 ms
+0.376 0 0.376 r
+(0)s
+0 g
+(  for freq in wordsFollowFreq:)59.5 182.4 ms
+(      prevTotal += )59.5 172.4 ms
+0 0 0.376 r
+(int)s
+0 g
+(\(freq\))s
+(  #print "Count of the \\"%s\\": %d" % \(previous,prevTotal\))59.5 162.4 ms
+(  index = )59.5 152.4 ms
+0.376 0 0.376 r
+(0)s
+0 g
+(  currIndex = )59.5 142.4 ms
+0.376 0 0.376 r
+(0)s
+0 g
+(  for word in vocab:)59.5 132.4 ms
+(      if word == curr:)59.5 122.4 ms
+(          break;)59.5 112.4 ms
+(      currIndex += )59.5 102.4 ms
+0.376 0 0.376 r
+(1)s
+0 g
+(  for word in wordsFollow:)59.5 92.4 ms
+(      if word == )59.5 82.4 ms
+0 0 0.376 r
+(str)s
+0 g
+(\(currIndex+)s
+0.376 0 0.376 r
+(1)s
+0 g
+(\):)s
+(          #print "Bigram Probability: %.14f" % \(float\(wordsFollowFreq[index]\)/prevTo)59.5 72.4 ms
+(tal\))59.5 62.4 ms
+(          return \()59.5 52.4 ms
+0 0 0.376 r
+(float)s
+0 g
+(\(wordsFollowFreq[index]\)/prevTotal\))s
+re sp
+%%PageTrailer
+%%Page: 3 3
+%%BeginPageSetup
+sv
+0 g
+F0 sf
+%%EndPageSetup
+F1 sf
+(hw3.py                                                                        Page 3)59.5 792.4 ms
+F0 sf
+(      index += )59.5 772.4 ms
+0.376 0 0.376 r
+(1)s
+0 g
+(  return )59.5 762.4 ms
+0.376 0 0.376 r
+(0.0)s
+0 g
+(#Calculating bigram log-likelihood)59.5 742.4 ms
+(totalBi = )59.5 732.4 ms
+0.376 0 0.376 r
+(0.0)s
+0 g
+(totalBi += math.log\(bigramProb\()59.5 722.4 ms
+0.376 0 0.376 r
+("THE")s
+0 g
+(, )s
+0.376 0 0.376 r
+("<s>")s
+0 g
+(\)\))s
+(for i in )59.5 712.4 ms
+0 0 0.376 r
+(range)s
+0 g
+(\()s
+0.376 0 0.376 r
+(0)s
+0 g
+(, )s
+0 0 0.376 r
+(len)s
+0 g
+(\(sentenceWords\)-)s
+0.376 0 0.376 r
+(1)s
+0 g
+(\):)s
+(  totalBi += math.log\(bigramProb\(sentenceWords[i+)59.5 702.4 ms
+0.376 0 0.376 r
+(1)s
+0 g
+(],sentenceWords[i]\)\))s
+(  #print "curr: " + sentenceWords[i+1])59.5 692.4 ms
+(  #print "prev: " + sentenceWords[i] + "\\n\\n")59.5 682.4 ms
+0 0 0.376 r
+(print)59.5 672.4 ms
+0 g
+( )s
+0.376 0 0.376 r
+("The bigram Log-likelihood is %.14f")s
+0 g
+( %totalBi)s
+0 0 0.376 r
+(print)59.5 662.4 ms
+0 g
+( )s
+0.376 0 0.376 r
+(")s
+0.498 0.251 0.251 r
+(\\n)s
+0.376 0 0.376 r
+(Therefore, the bigram model yields the highest log-likelihood")s
+0 0 0.376 r
+(print)59.5 652.4 ms
+0 g
+( )s
+0.376 0 0.376 r
+(")s
+0.498 0.251 0.251 r
+(\\n)s
+0.376 0 0.376 r
+(3.3 Part d, pair that are not observed")s
+0 g
+(#The sentence)59.5 642.4 ms
+(sentence = )59.5 632.4 ms
+0.376 0 0.376 r
+("THE SIXTEEN OFFICIALS SOLD FIRE INSURANCE")s
+0 g
+(sentenceWords = sentence.split\(\))59.5 622.4 ms
+(unigramLogProb = )59.5 602.4 ms
+0.376 0 0.376 r
+(0.0)s
+0 g
+(index = )59.5 592.4 ms
+0.376 0 0.376 r
+(0)s
+0 g
+(for word in vocab:)59.5 582.4 ms
+(    for i in sentenceWords:)59.5 572.4 ms
+(        if i == word:)59.5 562.4 ms
+(            unigramLogProb += math.log\(\()59.5 552.4 ms
+0 0 0.376 r
+(float)s
+0 g
+(\(unigram[index]\)/total\)\))s
+(    index += )59.5 542.4 ms
+0.376 0 0.376 r
+(1)s
+0 0 0.376 r
+(print)59.5 532.4 ms
+0 g
+( )s
+0.376 0 0.376 r
+("The unigram Log-likelihood is %.14f)s
+0.498 0.251 0.251 r
+(\\n\\n)s
+0.376 0 0.376 r
+(")s
+0 g
+( % unigramLogProb)s
+(Bi = )59.5 512.4 ms
+0.376 0 0.376 r
+(0.0)s
+0 g
+(valid = )59.5 502.4 ms
+0 0 0.376 r
+(True)s
+0 g
+(Bi += bigramProb\()59.5 492.4 ms
+0.376 0 0.376 r
+("THE")s
+0 g
+(, )s
+0.376 0 0.376 r
+("<s>")s
+0 g
+(\))s
+(for i in )59.5 482.4 ms
+0 0 0.376 r
+(range)s
+0 g
+( \()s
+0.376 0 0.376 r
+(0)s
+0 g
+(, )s
+0 0 0.376 r
+(len)s
+0 g
+(\(sentenceWords\)-)s
+0.376 0 0.376 r
+(1)s
+0 g
+(\):)s
+(    tmp = bigramProb\(sentenceWords[i+)59.5 472.4 ms
+0.376 0 0.376 r
+(1)s
+0 g
+(],sentenceWords[i]\))s
+(    if tmp == )59.5 462.4 ms
+0.376 0 0.376 r
+(0.0)s
+0 g
+(:)s
+(        )59.5 452.4 ms
+0 0 0.376 r
+(print)s
+0 g
+( )s
+0.376 0 0.376 r
+("not observed in training corpus: curr: %s, previous %s")s
+0 g
+( % \(sentenceWo)s
+(rds[i+)59.5 442.4 ms
+0.376 0 0.376 r
+(1)s
+0 g
+(], sentenceWords[i]\))s
+(        valid = )59.5 432.4 ms
+0 0 0.376 r
+(False)s
+0 g
+(        continue)59.5 422.4 ms
+(    Bi += math.log\(bigramProb\(sentenceWords[i+)59.5 412.4 ms
+0.376 0 0.376 r
+(1)s
+0 g
+(],sentenceWords[i]\)\))s
+(if valid == )59.5 402.4 ms
+0 0 0.376 r
+(True)s
+0 g
+(:)s
+(  )59.5 392.4 ms
+0 0 0.376 r
+(print)s
+0 g
+( )s
+0.376 0 0.376 r
+("The bigram Log-likelihood is %.14f")s
+0 g
+( %Bi)s
+(else:)59.5 382.4 ms
+(  )59.5 372.4 ms
+0 0 0.376 r
+(print)s
+0 g
+( )s
+0.376 0 0.376 r
+("Some Pairs not find in traning corpus, ")s
+0 g
+( + )s
+0.376 0 0.376 r
+("Log\(0\) undefined, can't calcula)s
+(te bigram probability")59.5 362.4 ms
+0 0 0.376 r
+(print)59.5 342.4 ms
+0 g
+( )s
+0.376 0 0.376 r
+(")s
+0.498 0.251 0.251 r
+(\\n)s
+0.376 0 0.376 r
+(3.3 Part e, mixture model")s
+0 g
+(Lambda = )59.5 332.4 ms
+0.376 0 0.376 r
+(0.00)s
+0 g
+(mixModelLogProb = [])59.5 322.4 ms
+(mixModelTupleList = [])59.5 312.4 ms
+(sentence = )59.5 302.4 ms
+0.376 0 0.376 r
+("THE SIXTEEN OFFICIALS SOLD FIRE INSURANCE")s
+0 g
+(sentenceWords = sentence.split\(\))59.5 292.4 ms
+(while Lambda <= )59.5 282.4 ms
+0.376 0 0.376 r
+(1.0)s
+0 g
+(:)s
+(  subtotal = )59.5 272.4 ms
+0.376 0 0.376 r
+(0.0)s
+0 g
+(  subtotal += math.log\(\()59.5 262.4 ms
+0.376 0 0.376 r
+(1)s
+0 g
+(-Lambda\) * unigramProb\(sentenceWords[)s
+0.376 0 0.376 r
+(0)s
+0 g
+(]\) + Lambda * bigramP)s
+(rob\(sentenceWords[)59.5 252.4 ms
+0.376 0 0.376 r
+(0)s
+0 g
+(],)s
+0.376 0 0.376 r
+("<s>")s
+0 g
+(\)\))s
+(  for i in )59.5 242.4 ms
+0 0 0.376 r
+(range)s
+0 g
+(\()s
+0.376 0 0.376 r
+(0)s
+0 g
+(, )s
+0 0 0.376 r
+(len)s
+0 g
+(\(sentenceWords\)-)s
+0.376 0 0.376 r
+(1)s
+0 g
+(\):)s
+(      )59.5 232.4 ms
+(    subtotal += math.log\(\()59.5 222.4 ms
+0.376 0 0.376 r
+(1)s
+0 g
+(-Lambda\) * unigramProb\(sentenceWords[i+)s
+0.376 0 0.376 r
+(1)s
+0 g
+(]\) + Lambda * big)s
+(ramProb\(sentenceWords[i+)59.5 212.4 ms
+0.376 0 0.376 r
+(1)s
+0 g
+(],sentenceWords[i]\)\) )s
+(  mixModelLogProb.append\(subtotal\)  )59.5 202.4 ms
+(  mixModelTupleList.append\(\(subtotal,Lambda\)\))59.5 192.4 ms
+(  )59.5 182.4 ms
+0 0 0.376 r
+(print)s
+0 g
+( )s
+0.376 0 0.376 r
+("Lambda: %.2f total is %.14f")s
+0 g
+( %\(Lambda, subtotal\))s
+(  Lambda += )59.5 172.4 ms
+0.376 0 0.376 r
+(0.01)s
+0 g
+(mixModelTupleList.sort\(reverse=)59.5 162.4 ms
+0 0 0.376 r
+(True)s
+0 g
+(\))s
+0 0 0.376 r
+(print)59.5 152.4 ms
+0 g
+( )s
+0.376 0 0.376 r
+("The best Lambda value is: %.2f")s
+0 g
+( %mixModelTupleList[)s
+0.376 0 0.376 r
+(0)s
+0 g
+(][)s
+0.376 0 0.376 r
+(1)s
+0 g
+(])s
+(plt.plot\(mixModelLogProb\))59.5 142.4 ms
+(plt.ylabel\()59.5 132.4 ms
+0.376 0 0.376 r
+('mixture Log-likelihood')s
+0 g
+(\))s
+(plt.show\(\))59.5 122.4 ms
+re sp
+%%PageTrailer
+%%Trailer
+%%Pages: 3
+%%EOF
+

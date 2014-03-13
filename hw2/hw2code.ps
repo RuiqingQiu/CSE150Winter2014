@@ -1,0 +1,1667 @@
+%!PS-Adobe-3.0
+%%Title: hw2.java
+%%For: raymondqiu
+%%Creator: VIM - Vi IMproved 7.3 (2010 Aug 15)
+%%CreationDate: Mon Jan 27 17:22:21 2014
+%%DocumentData: Clean8Bit
+%%Orientation: Portrait
+%%Pages: (atend)
+%%PageOrder: Ascend
+%%BoundingBox: 59 49 564 800
+%%DocumentMedia: A4 595 842 0 () ()
+%%DocumentNeededResources: font Courier
+%%+ font Courier-Bold
+%%+ font Courier-Oblique
+%%+ font Courier-BoldOblique
+%%DocumentSuppliedResources: procset VIM-Prolog 1.4 1
+%%+ encoding VIM-latin1 1.0 0
+%%Requirements: duplex collate color
+%%EndComments
+%%BeginDefaults
+%%PageResources: font Courier
+%%+ font Courier-Bold
+%%+ font Courier-Oblique
+%%+ font Courier-BoldOblique
+%%PageMedia: A4
+%%EndDefaults
+%%BeginProlog
+%%BeginResource: procset VIM-Prolog
+%%BeginDocument: /usr/share/vim/vim73/print/prolog.ps
+%!PS-Adobe-3.0 Resource-ProcSet
+%%Title: VIM-Prolog
+%%Version: 1.4 1
+%%EndComments
+% Editing of this file is NOT RECOMMENDED.  You run a very good risk of causing
+% all PostScript printing from VIM failing if you do.  PostScript is not called
+% a write-only language for nothing!
+/packedarray where not{userdict begin/setpacking/pop load def/currentpacking
+false def end}{pop}ifelse/CP currentpacking def true setpacking
+/bd{bind def}bind def/ld{load def}bd/ed{exch def}bd/d/def ld
+/db{dict begin}bd/cde{currentdict end}bd
+/T true d/F false d
+/SO null d/sv{/SO save d}bd/re{SO restore}bd
+/L2 systemdict/languagelevel 2 copy known{get exec}{pop pop 1}ifelse 2 ge d
+/m/moveto ld/s/show ld /ms{m s}bd /g/setgray ld/r/setrgbcolor ld/sp{showpage}bd
+/gs/gsave ld/gr/grestore ld/cp/currentpoint ld
+/ul{gs UW setlinewidth cp UO add 2 copy newpath m 3 1 roll add exch lineto
+stroke gr}bd
+/bg{gs r cp BO add 4 -2 roll rectfill gr}bd
+/sl{90 rotate 0 exch translate}bd
+L2{
+/sspd{mark exch{setpagedevice}stopped cleartomark}bd
+/nc{1 db/NumCopies ed cde sspd}bd
+/sps{3 db/Orientation ed[3 1 roll]/PageSize ed/ImagingBBox null d cde sspd}bd
+/dt{2 db/Tumble ed/Duplex ed cde sspd}bd
+/c{1 db/Collate ed cde sspd}bd
+}{
+/nc{/#copies ed}bd
+/sps{statusdict/setpage get exec}bd
+/dt{statusdict/settumble 2 copy known{get exec}{pop pop pop}ifelse
+statusdict/setduplexmode 2 copy known{get exec}{pop pop pop}ifelse}bd
+/c{pop}bd
+}ifelse
+/ffs{findfont exch scalefont d}bd/sf{setfont}bd
+/ref{1 db findfont dup maxlength dict/NFD ed{exch dup/FID ne{exch NFD 3 1 roll
+put}{pop pop}ifelse}forall/Encoding findresource dup length 256 eq{NFD/Encoding
+3 -1 roll put}{pop}ifelse NFD dup/FontType get 3 ne{/CharStrings}{/CharProcs}
+ifelse 2 copy known{2 copy get dup maxlength dict copy[/questiondown/space]{2
+copy known{2 copy get 2 index/.notdef 3 -1 roll put pop exit}if pop}forall put
+}{pop pop}ifelse dup NFD/FontName 3 -1 roll put NFD definefont pop end}bd
+CP setpacking
+(\004)cvn{}bd
+% vim:ff=unix:
+%%EOF
+%%EndDocument
+%%EndResource
+%%BeginResource: encoding VIM-latin1
+%%BeginDocument: /usr/share/vim/vim73/print/latin1.ps
+%!PS-Adobe-3.0 Resource-Encoding
+%%Title: VIM-latin1
+%%Version: 1.0 0
+%%EndComments
+/VIM-latin1[
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/space /exclam /quotedbl /numbersign /dollar /percent /ampersand /quotesingle
+/parenleft /parenright /asterisk /plus /comma /minus /period /slash
+/zero /one /two /three /four /five /six /seven
+/eight /nine /colon /semicolon /less /equal /greater /question
+/at /A /B /C /D /E /F /G
+/H /I /J /K /L /M /N /O
+/P /Q /R /S /T /U /V /W
+/X /Y /Z /bracketleft /backslash /bracketright /asciicircum /underscore
+/grave /a /b /c /d /e /f /g
+/h /i /j /k /l /m /n /o
+/p /q /r /s /t /u /v /w
+/x /y /z /braceleft /bar /braceright /asciitilde /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/space /exclamdown /cent /sterling /currency /yen /brokenbar /section
+/dieresis /copyright /ordfeminine /guillemotleft /logicalnot /hyphen /registered /macron
+/degree /plusminus /twosuperior /threesuperior /acute /mu /paragraph /periodcentered
+/cedilla /onesuperior /ordmasculine /guillemotright /onequarter /onehalf /threequarters /questiondown
+/Agrave /Aacute /Acircumflex /Atilde /Adieresis /Aring /AE /Ccedilla
+/Egrave /Eacute /Ecircumflex /Edieresis /Igrave /Iacute /Icircumflex /Idieresis
+/Eth /Ntilde /Ograve /Oacute /Ocircumflex /Otilde /Odieresis /multiply
+/Oslash /Ugrave /Uacute /Ucircumflex /Udieresis /Yacute /Thorn /germandbls
+/agrave /aacute /acircumflex /atilde /adieresis /aring /ae /ccedilla
+/egrave /eacute /ecircumflex /edieresis /igrave /iacute /icircumflex /idieresis
+/eth /ntilde /ograve /oacute /ocircumflex /otilde /odieresis /divide
+/oslash /ugrave /uacute /ucircumflex /udieresis /yacute /thorn /ydieresis]
+/Encoding defineresource pop
+% vim:ff=unix:
+%%EOF
+%%EndDocument
+%%EndResource
+%%EndProlog
+%%BeginSetup
+595 842 0 sps
+1 nc
+T F dt
+T c
+%%IncludeResource: font Courier
+/_F0 /VIM-latin1 /Courier ref
+/F0 10 /_F0 ffs
+%%IncludeResource: font Courier-Bold
+/_F1 /VIM-latin1 /Courier-Bold ref
+/F1 10 /_F1 ffs
+%%IncludeResource: font Courier-Oblique
+/_F2 /VIM-latin1 /Courier-Oblique ref
+/F2 10 /_F2 ffs
+%%IncludeResource: font Courier-BoldOblique
+/_F3 /VIM-latin1 /Courier-BoldOblique ref
+/F3 10 /_F3 ffs
+/UO -1 d
+/UW 0.5 d
+/BO -2.5 d
+%%EndSetup
+%%Page: 1 1
+%%BeginPageSetup
+sv
+0 g
+F0 sf
+%%EndPageSetup
+F1 sf
+(hw2.java                                                                      Page 1)59.5 792.4 ms
+F0 sf
+(/*)59.5 772.4 ms
+( * Author: Ruiqing Qiu)59.5 762.4 ms
+( * PID: A98022702)59.5 752.4 ms
+( * TA: Vineel)59.5 742.4 ms
+( * File name: hw2.java)59.5 732.4 ms
+( */)59.5 722.4 ms
+0.502 0.502 0 r
+(import)59.5 712.4 ms
+0 g
+( java.io.*;)s
+0.502 0.502 0 r
+(import)59.5 702.4 ms
+0 g
+( java.util.*;)s
+0.502 g
+(public)59.5 682.4 ms
+0 g
+( )s
+0.502 g
+(class)s
+0 g
+( hw2)s
+({)59.5 672.4 ms
+(  //Total number of zip codes)59.5 662.4 ms
+(  )59.5 652.4 ms
+0.502 g
+(final)s
+0 g
+( )s
+0.502 g
+(static)s
+0 g
+( )s
+0.502 g
+(int)s
+0 g
+( TOTAL = )s
+0.753 0 0.753 r
+(32845)s
+0 g
+(;)s
+(  )59.5 642.4 ms
+(  )59.5 632.4 ms
+0.502 g
+(static)s
+0 g
+( )s
+0.502 g
+(int)s
+0 g
+( PopTotal = )s
+0.753 0 0.753 r
+(0)s
+0 g
+(;)s
+(  //One array to store the zip codes)59.5 622.4 ms
+(  )59.5 612.4 ms
+0.502 g
+(static)s
+0 g
+( String [] zip = new String [TOTAL];)s
+(  //One array to store the population)59.5 602.4 ms
+(  )59.5 592.4 ms
+0.502 g
+(static)s
+0 g
+( )s
+0.502 g
+(int)s
+0 g
+( [] population = new )s
+0.502 g
+(int)s
+0 g
+( [TOTAL];)s
+(   )59.5 582.4 ms
+(  //Initialize a int array that are all -1)59.5 572.4 ms
+(  )59.5 562.4 ms
+0.502 g
+(static)s
+0 g
+( )s
+0.502 g
+(int)s
+0 g
+( [] GuessedZip = {-)s
+0.753 0 0.753 r
+(1)s
+0 g
+(,-)s
+0.753 0 0.753 r
+(1)s
+0 g
+(,-)s
+0.753 0 0.753 r
+(1)s
+0 g
+(,-)s
+0.753 0 0.753 r
+(1)s
+0 g
+(,-)s
+0.753 0 0.753 r
+(1)s
+0 g
+(};)s
+(  //Keep track of all numbers that need to be guessed, -1 indicate guessed)59.5 552.4 ms
+(  )59.5 542.4 ms
+0.502 g
+(static)s
+0 g
+( )s
+0.502 g
+(int)s
+0 g
+( [] numbers = {)s
+0.753 0 0.753 r
+(0)s
+0 g
+(,)s
+0.753 0 0.753 r
+(1)s
+0 g
+(,)s
+0.753 0 0.753 r
+(2)s
+0 g
+(,)s
+0.753 0 0.753 r
+(3)s
+0 g
+(,)s
+0.753 0 0.753 r
+(4)s
+0 g
+(,)s
+0.753 0 0.753 r
+(5)s
+0 g
+(,)s
+0.753 0 0.753 r
+(6)s
+0 g
+(,)s
+0.753 0 0.753 r
+(7)s
+0 g
+(,)s
+0.753 0 0.753 r
+(8)s
+0 g
+(,)s
+0.753 0 0.753 r
+(9)s
+0 g
+(};)s
+(  )59.5 532.4 ms
+(  )59.5 522.4 ms
+0.502 g
+(public)s
+0 g
+( )s
+0.502 g
+(static)s
+0 g
+( )s
+0.502 g
+(void)s
+0 g
+( main\(String[]args\){)s
+(    )59.5 512.4 ms
+0.502 g
+(int)s
+0 g
+( lines = )s
+0.753 0 0.753 r
+(0)s
+0 g
+(;)s
+(    try{)59.5 502.4 ms
+(      FileInputStream fstream = new FileInputStream\()59.5 492.4 ms
+0.753 0 0.753 r
+("zipcode.txt")s
+0 g
+(\);)s
+(      BufferedReader br = )59.5 482.4 ms
+(          new BufferedReader\(new InputStreamReader\(fstream\)\);)59.5 472.4 ms
+(      String strLine;)59.5 462.4 ms
+(      )59.5 452.4 ms
+(      )59.5 442.4 ms
+0.502 g
+(int)s
+0 g
+( zipIndex = )s
+0.753 0 0.753 r
+(0)s
+0 g
+(;)s
+(      )59.5 432.4 ms
+0.502 g
+(int)s
+0 g
+( popIndex = )s
+0.753 0 0.753 r
+(0)s
+0 g
+(;)s
+(      while \(\(strLine = br.readLine\(\)\) != )59.5 422.4 ms
+0.753 0 0.753 r
+(null)s
+0 g
+(\){)s
+(        //Skip the first line)59.5 412.4 ms
+(        if\(lines == )59.5 402.4 ms
+0.753 0 0.753 r
+(0)s
+0 g
+(\){)s
+(          lines++;)59.5 392.4 ms
+(          continue;)59.5 382.4 ms
+(        })59.5 372.4 ms
+(        //Incrment the lines)59.5 362.4 ms
+(        lines++;)59.5 352.4 ms
+(        String[] splited = strLine.split\()59.5 332.4 ms
+0.753 0 0.753 r
+(")s
+1 0.502 0.502 r
+(\\\\)s
+0.753 0 0.753 r
+(s")s
+0 g
+(\);)s
+(        zip[zipIndex++] = splited[)59.5 322.4 ms
+0.753 0 0.753 r
+(0)s
+0 g
+(];)s
+(        population[popIndex++] = Integer.parseInt\(splited[)59.5 312.4 ms
+0.753 0 0.753 r
+(1)s
+0 g
+(]\);)s
+(        //Get the total population)59.5 302.4 ms
+(        PopTotal += Integer.parseInt\(splited[)59.5 292.4 ms
+0.753 0 0.753 r
+(1)s
+0 g
+(]\);)s
+(      })59.5 282.4 ms
+(      br.close\(\);)59.5 272.4 ms
+(    })59.5 262.4 ms
+(    catch \(Exception e\){)59.5 252.4 ms
+(      e.printStackTrace\(\);)59.5 242.4 ms
+(    })59.5 232.4 ms
+(    System.out.println\()59.5 222.4 ms
+0.753 0 0.753 r
+("Total Population: ")s
+0 g
+( + PopTotal\);)s
+(    )59.5 212.4 ms
+(    //This part is for problem 2.5 \(a\))59.5 202.4 ms
+(    PriorityQueue<Pair> pq = new PriorityQueue\(TOTAL, )59.5 192.4 ms
+(            new Comparator<Pair>\(\){)59.5 182.4 ms
+(              )59.5 172.4 ms
+0.502 g
+(public)s
+0 g
+( )s
+0.502 g
+(int)s
+0 g
+( compare\(Pair a1, Pair a2\){)s
+(                return a2.pop.compareTo\(a1.pop\);)59.5 162.4 ms
+(              }}\);)59.5 152.4 ms
+(    )59.5 142.4 ms
+(    for\()59.5 132.4 ms
+0.502 g
+(int)s
+0 g
+( i = )s
+0.753 0 0.753 r
+(0)s
+0 g
+(;i < zip.length; i++\){)s
+(      pq.add\(new Pair\(zip[i],population[i]\)\);)59.5 122.4 ms
+(    })59.5 112.4 ms
+(    System.out.println\()59.5 102.4 ms
+0.753 0 0.753 r
+("The five most populated zip codes are: ")s
+0 g
+(\);)s
+(    for\()59.5 92.4 ms
+0.502 g
+(int)s
+0 g
+( i = )s
+0.753 0 0.753 r
+(0)s
+0 g
+(; i < )s
+0.753 0 0.753 r
+(5)s
+0 g
+(; i++\){)s
+(      System.out.println\()59.5 82.4 ms
+0.753 0 0.753 r
+("zip code: ")s
+0 g
+( + pq.peek\(\).zip )s
+(                + )59.5 72.4 ms
+0.753 0 0.753 r
+(" with population ")s
+0 g
+(+ pq.poll\(\).pop\);)s
+(    })59.5 62.4 ms
+re sp
+%%PageTrailer
+%%Page: 2 2
+%%BeginPageSetup
+sv
+0 g
+F0 sf
+%%EndPageSetup
+F1 sf
+(hw2.java                                                                      Page 2)59.5 792.4 ms
+F0 sf
+(    //Program Start, the very first guess)59.5 772.4 ms
+(    )59.5 762.4 ms
+0.502 g
+(double)s
+0 g
+( [] guess = new )s
+0.502 g
+(double)s
+0 g
+([)s
+0.753 0 0.753 r
+(10)s
+0 g
+(]; )s
+(    )59.5 752.4 ms
+0.502 g
+(int)s
+0 g
+( guessed = )s
+0.753 0 0.753 r
+(0)s
+0 g
+(;)s
+(    System.out.println\()59.5 742.4 ms
+0.753 0 0.753 r
+("Which mode do you want? )s
+1 0.502 0.502 r
+(\\n)s
+0.753 0 0.753 r
+(")s
+0 g
+( + )s
+(            )59.5 732.4 ms
+0.753 0 0.753 r
+("Y for enter you own or X for suggested guess")s
+0 g
+(\);)s
+(    try{)59.5 722.4 ms
+(      BufferedReader bufferRead =)59.5 712.4 ms
+(           new BufferedReader\(new InputStreamReader\(System.in\)\);)59.5 702.4 ms
+(      String line = bufferRead.readLine\(\);)59.5 692.4 ms
+(      //If enter your own)59.5 682.4 ms
+(      if\(line.compareTo\()59.5 672.4 ms
+0.753 0 0.753 r
+("Y")s
+0 g
+(\) == )s
+0.753 0 0.753 r
+(0)s
+0 g
+(\))s
+(      {)59.5 662.4 ms
+(        for\()59.5 652.4 ms
+0.502 g
+(int)s
+0 g
+( i = )s
+0.753 0 0.753 r
+(0)s
+0 g
+(;i < )s
+0.753 0 0.753 r
+(10)s
+0 g
+(; i++\))s
+(        {       )59.5 642.4 ms
+(          )59.5 632.4 ms
+0.502 g
+(char)s
+0 g
+( c = \()s
+0.502 g
+(char)s
+0 g
+(\) \()s
+0.753 0 0.753 r
+('0')s
+0 g
+(+i\);)s
+(          guess[i] = getProb\(c\);)59.5 622.4 ms
+(        })59.5 612.4 ms
+(        )59.5 602.4 ms
+0.502 g
+(int)s
+0 g
+( max = )s
+0.753 0 0.753 r
+(0)s
+0 g
+(;)s
+(        for\()59.5 592.4 ms
+0.502 g
+(int)s
+0 g
+( i = )s
+0.753 0 0.753 r
+(0)s
+0 g
+(; i < guess.length; i++\){)s
+(          if\(guess[i] > guess[max]\))59.5 582.4 ms
+(            max = i;)59.5 572.4 ms
+(            System.out.println\(i+ )59.5 562.4 ms
+0.753 0 0.753 r
+(": ")s
+0 g
+( + guess[i]\);)s
+(        })59.5 552.4 ms
+(        System.out.printf\()59.5 542.4 ms
+0.753 0 0.753 r
+(")s
+1 0.502 0.502 r
+(\\n\\n)s
+0.753 0 0.753 r
+(")s
+0 g
+(\);)s
+(        )59.5 532.4 ms
+0.502 g
+(int)s
+0 g
+( nextGuess = max;)s
+(        System.out.println\()59.5 522.4 ms
+0.753 0 0.753 r
+("The next guess is : ")s
+0 g
+( + max + )s
+0.753 0 0.753 r
+(")s
+1 0.502 0.502 r
+(\\n)s
+0.753 0 0.753 r
+(")s
+0 g
+( +)s
+(                  )59.5 512.4 ms
+0.753 0 0.753 r
+("with probability: ")s
+0 g
+( + guess[max]\);)s
+( )59.5 502.4 ms
+(        while\()59.5 492.4 ms
+0.753 0 0.753 r
+(true)s
+0 g
+(\))s
+(        {)59.5 482.4 ms
+(          System.out.print\()59.5 472.4 ms
+0.753 0 0.753 r
+("Zip code: ")s
+0 g
+(\);)s
+(          for\()59.5 462.4 ms
+0.502 g
+(int)s
+0 g
+( i = )s
+0.753 0 0.753 r
+(0)s
+0 g
+(; i < GuessedZip.length; i++\){)s
+(            System.out.print\(GuessedZip[i] + )59.5 452.4 ms
+0.753 0 0.753 r
+(" ")s
+0 g
+(\);)s
+(          })59.5 442.4 ms
+(          System.out.println\()59.5 432.4 ms
+0.753 0 0.753 r
+(")s
+1 0.502 0.502 r
+(\\n)s
+0.753 0 0.753 r
+(Enter you guessed digit and its ")s
+0 g
+( + )s
+(                  )59.5 422.4 ms
+0.753 0 0.753 r
+("position:)s
+1 0.502 0.502 r
+(\\n)s
+0.753 0 0.753 r
+(")s
+0 g
+( )s
+(           + )59.5 412.4 ms
+0.753 0 0.753 r
+("\(For example, 0 1 to indicate it's 0 at the first position\)")s
+0 g
+(           + )59.5 402.4 ms
+0.753 0 0.753 r
+(")s
+1 0.502 0.502 r
+(\\n)s
+0.753 0 0.753 r
+(\(Or, 2 -1 to indicate a wrong guess\)")s
+0 g
+(\);)s
+(          line = bufferRead.readLine\(\);)59.5 392.4 ms
+(          String[] splited = line.split\()59.5 382.4 ms
+0.753 0 0.753 r
+(")s
+1 0.502 0.502 r
+(\\\\)s
+0.753 0 0.753 r
+(s")s
+0 g
+(\);)s
+(          //Getting the guessed number)59.5 372.4 ms
+(          guessed = Integer.parseInt\(splited[)59.5 362.4 ms
+0.753 0 0.753 r
+(0)s
+0 g
+(]\);)s
+(          //Wrong guess)59.5 352.4 ms
+(          if\(splited[)59.5 342.4 ms
+0.753 0 0.753 r
+(1)s
+0 g
+(].compareTo\()s
+0.753 0 0.753 r
+("-1")s
+0 g
+(\) == )s
+0.753 0 0.753 r
+(0)s
+0 g
+(\){)s
+(            numbers[guessed] = -)59.5 332.4 ms
+0.753 0 0.753 r
+(1)s
+0 g
+(;    )s
+(          })59.5 322.4 ms
+(          else{)59.5 312.4 ms
+(            for\()59.5 302.4 ms
+0.502 g
+(int)s
+0 g
+( i = )s
+0.753 0 0.753 r
+(1)s
+0 g
+(; i < splited.length; i++\){)s
+(              GuessedZip[Integer.parseInt\(splited[i]\)-)59.5 292.4 ms
+0.753 0 0.753 r
+(1)s
+0 g
+(] = guessed;)s
+(            })59.5 282.4 ms
+(            for\()59.5 272.4 ms
+0.502 g
+(int)s
+0 g
+( i = )s
+0.753 0 0.753 r
+(0)s
+0 g
+(; i < GuessedZip.length; i++\){)s
+(              System.out.print\(GuessedZip[i] + )59.5 262.4 ms
+0.753 0 0.753 r
+(" ")s
+0 g
+( \);)s
+(            })59.5 252.4 ms
+(            for\()59.5 242.4 ms
+0.502 g
+(int)s
+0 g
+( i = )s
+0.753 0 0.753 r
+(0)s
+0 g
+(; i < numbers.length; i++\))s
+(            {)59.5 232.4 ms
+(              if\(numbers[i] == guessed\))59.5 222.4 ms
+(                numbers[i] = -)59.5 212.4 ms
+0.753 0 0.753 r
+(1)s
+0 g
+(;)s
+(            })59.5 202.4 ms
+(          })59.5 192.4 ms
+(          System.out.println\(\);)59.5 182.4 ms
+(          )59.5 172.4 ms
+0.502 g
+(boolean)s
+0 g
+( found = checkIfFound\(\);)s
+(          if\(found\){)59.5 162.4 ms
+(            System.out.println\()59.5 152.4 ms
+0.753 0 0.753 r
+("The zip code is: ")s
+0 g
+(\);)s
+(            for\()59.5 142.4 ms
+0.502 g
+(int)s
+0 g
+( i = )s
+0.753 0 0.753 r
+(0)s
+0 g
+(; i < GuessedZip.length; i++\){)s
+(              System.out.print\(GuessedZip[i]\);)59.5 132.4 ms
+(            })59.5 122.4 ms
+(            System.out.println\(\);)59.5 112.4 ms
+(            return;)59.5 102.4 ms
+(          })59.5 92.4 ms
+(          //Calculate next guess given the previous evidence)59.5 82.4 ms
+(          for \()59.5 72.4 ms
+0.502 g
+(int)s
+0 g
+( i = )s
+0.753 0 0.753 r
+(0)s
+0 g
+(; i < numbers.length; i++\){)s
+(            if\(numbers[i] == -)59.5 62.4 ms
+0.753 0 0.753 r
+(1)s
+0 g
+(\){)s
+(              guess[i] = )59.5 52.4 ms
+0.753 0 0.753 r
+(0)s
+0 g
+(;)s
+re sp
+%%PageTrailer
+%%Page: 3 3
+%%BeginPageSetup
+sv
+0 g
+F0 sf
+%%EndPageSetup
+F1 sf
+(hw2.java                                                                      Page 3)59.5 792.4 ms
+F0 sf
+(              continue;)59.5 772.4 ms
+(            })59.5 762.4 ms
+(            )59.5 752.4 ms
+0.502 g
+(char)s
+0 g
+( c = \()s
+0.502 g
+(char)s
+0 g
+(\)\()s
+0.753 0 0.753 r
+('0')s
+0 g
+( + numbers[i]\);)s
+(            guess[i] = evidenceProb\(c\);)59.5 742.4 ms
+(          })59.5 732.4 ms
+(          for\()59.5 722.4 ms
+0.502 g
+(int)s
+0 g
+( i = )s
+0.753 0 0.753 r
+(0)s
+0 g
+(; i < guess.length; i++\){)s
+(            if\(guess[i] > guess[max]\))59.5 712.4 ms
+(              max = i;)59.5 702.4 ms
+(            System.out.println\(i+ )59.5 692.4 ms
+0.753 0 0.753 r
+(": ")s
+0 g
+( + guess[i]\);)s
+(          })59.5 682.4 ms
+(          System.out.printf\()59.5 672.4 ms
+0.753 0 0.753 r
+(")s
+1 0.502 0.502 r
+(\\n\\n)s
+0.753 0 0.753 r
+(")s
+0 g
+(\);)s
+(          nextGuess = max;)59.5 662.4 ms
+(          System.out.println\()59.5 652.4 ms
+0.753 0 0.753 r
+("The next guess is : ")s
+0 g
+( + max + )s
+0.753 0 0.753 r
+(")s
+1 0.502 0.502 r
+(\\n)s
+0.753 0 0.753 r
+(")s
+0 g
+( +)s
+(                  )59.5 642.4 ms
+0.753 0 0.753 r
+("with probability: ")s
+0 g
+( + guess[max]\);)s
+(        }//End of while)59.5 632.4 ms
+(      }//End of if)59.5 622.4 ms
+(    }//End of try)59.5 612.4 ms
+(    catch\(Exception e\){)59.5 602.4 ms
+(      e.printStackTrace\(\);)59.5 592.4 ms
+(    })59.5 582.4 ms
+(    )59.5 572.4 ms
+(    for\()59.5 562.4 ms
+0.502 g
+(int)s
+0 g
+( i = )s
+0.753 0 0.753 r
+(0)s
+0 g
+(;i < )s
+0.753 0 0.753 r
+(10)s
+0 g
+(; i++\){ )s
+(      )59.5 552.4 ms
+0.502 g
+(char)s
+0 g
+( c = \()s
+0.502 g
+(char)s
+0 g
+(\) \()s
+0.753 0 0.753 r
+('0')s
+0 g
+(+i\);)s
+(      System.out.println\(getProb\(c\)\);)59.5 542.4 ms
+(      guess[i] = getProb\(c\);)59.5 532.4 ms
+(    })59.5 522.4 ms
+(    )59.5 512.4 ms
+0.502 g
+(int)s
+0 g
+( max = )s
+0.753 0 0.753 r
+(0)s
+0 g
+(;)s
+(    for\()59.5 502.4 ms
+0.502 g
+(int)s
+0 g
+( i = )s
+0.753 0 0.753 r
+(0)s
+0 g
+(; i < guess.length; i++\){)s
+(      if\(guess[i] > guess[max]\))59.5 492.4 ms
+(        max = i;)59.5 482.4 ms
+(    })59.5 472.4 ms
+(    guessed = max;)59.5 462.4 ms
+(    )59.5 452.4 ms
+(    for\()59.5 442.4 ms
+0.502 g
+(int)s
+0 g
+( i = )s
+0.753 0 0.753 r
+(0)s
+0 g
+(; i < numbers.length;i++\){)s
+(      if\(numbers[i] == guessed\))59.5 432.4 ms
+(        numbers[i] = -)59.5 422.4 ms
+0.753 0 0.753 r
+(1)s
+0 g
+(;)s
+(    })59.5 412.4 ms
+(    while\()59.5 392.4 ms
+0.753 0 0.753 r
+(true)s
+0 g
+(\){)s
+(      System.out.print\()59.5 382.4 ms
+0.753 0 0.753 r
+("Where is digit ")s
+0 g
+( + guessed + )s
+(            )59.5 372.4 ms
+0.753 0 0.753 r
+("? \(Enter position range from 1 - 5, separated by space\)")s
+0 g
+( + )s
+(             )59.5 362.4 ms
+0.753 0 0.753 r
+(" or -1 to indicate none\): ")s
+0 g
+(\);)s
+(      try{)59.5 352.4 ms
+(        BufferedReader bufferRead = )59.5 342.4 ms
+(          new BufferedReader\(new InputStreamReader\(System.in\)\);)59.5 332.4 ms
+(        String line = bufferRead.readLine\(\);)59.5 322.4 ms
+(        String[] splited = line.split\()59.5 312.4 ms
+0.753 0 0.753 r
+(")s
+1 0.502 0.502 r
+(\\\\)s
+0.753 0 0.753 r
+(s")s
+0 g
+(\);)s
+(        //If guess incorrectly continue)59.5 302.4 ms
+(        if\(splited[)59.5 292.4 ms
+0.753 0 0.753 r
+(0)s
+0 g
+(].compareTo\()s
+0.753 0 0.753 r
+("-1")s
+0 g
+(\) == )s
+0.753 0 0.753 r
+(0)s
+0 g
+(\))s
+(          continue;)59.5 282.4 ms
+(        else{)59.5 272.4 ms
+(          for\()59.5 262.4 ms
+0.502 g
+(int)s
+0 g
+( i = )s
+0.753 0 0.753 r
+(0)s
+0 g
+(; i < splited.length; i++\){ )s
+(            GuessedZip[Integer.parseInt\(splited[i]\)-)59.5 252.4 ms
+0.753 0 0.753 r
+(1)s
+0 g
+(] = guessed;)s
+(          })59.5 242.4 ms
+(        })59.5 232.4 ms
+(        for\()59.5 222.4 ms
+0.502 g
+(int)s
+0 g
+( i = )s
+0.753 0 0.753 r
+(0)s
+0 g
+(; i < GuessedZip.length; i++\){)s
+(          System.out.print\(GuessedZip[i]\);)59.5 212.4 ms
+(        })59.5 202.4 ms
+(        System.out.println\(\);)59.5 192.4 ms
+(      })59.5 182.4 ms
+(      catch \(Exception e\){)59.5 172.4 ms
+(        e.printStackTrace\(\);)59.5 162.4 ms
+(      })59.5 152.4 ms
+(      finally{)59.5 142.4 ms
+(        )59.5 132.4 ms
+0.502 g
+(boolean)s
+0 g
+( found = checkIfFound\(\);)s
+(        if\(found\){)59.5 122.4 ms
+(          System.out.println\()59.5 112.4 ms
+0.753 0 0.753 r
+("the zip code is: ")s
+0 g
+(\);)s
+(          for\()59.5 102.4 ms
+0.502 g
+(int)s
+0 g
+( i = )s
+0.753 0 0.753 r
+(0)s
+0 g
+(; i < GuessedZip.length; i++\){)s
+(            System.out.print\(GuessedZip[i]\);)59.5 92.4 ms
+(          })59.5 82.4 ms
+(          System.out.println\(\);)59.5 72.4 ms
+(          return;)59.5 62.4 ms
+(        })59.5 52.4 ms
+re sp
+%%PageTrailer
+%%Page: 4 4
+%%BeginPageSetup
+sv
+0 g
+F0 sf
+%%EndPageSetup
+F1 sf
+(hw2.java                                                                      Page 4)59.5 792.4 ms
+F0 sf
+(        //Calculate next guess given the previous evidence)59.5 772.4 ms
+(        for\()59.5 762.4 ms
+0.502 g
+(int)s
+0 g
+( index = )s
+0.753 0 0.753 r
+(0)s
+0 g
+(; index < numbers.length; index++\){)s
+(          //If the number is already guessed)59.5 752.4 ms
+(          if\(numbers[index] == -)59.5 742.4 ms
+0.753 0 0.753 r
+(1)s
+0 g
+(\){)s
+(            guess[index] = )59.5 732.4 ms
+0.753 0 0.753 r
+(0)s
+0 g
+(;)s
+(            continue;)59.5 722.4 ms
+(          })59.5 712.4 ms
+(          )59.5 702.4 ms
+0.502 g
+(char)s
+0 g
+( c = \()s
+0.502 g
+(char)s
+0 g
+(\)\()s
+0.753 0 0.753 r
+('0')s
+0 g
+( + numbers[index]\);)s
+(          //System.out.println\(c\);)59.5 692.4 ms
+(          //System.out.println\(evidenceProb\(c\)\);)59.5 682.4 ms
+(          guess[index] = evidenceProb\(c\);)59.5 672.4 ms
+(        })59.5 662.4 ms
+(        for\()59.5 652.4 ms
+0.502 g
+(int)s
+0 g
+( i = )s
+0.753 0 0.753 r
+(0)s
+0 g
+(; i < guess.length; i++\){)s
+(          System.out.println\(i + )59.5 642.4 ms
+0.753 0 0.753 r
+(": ")s
+0 g
+( + guess[i]\);)s
+(          if\(guess[i] > guess[max]\))59.5 632.4 ms
+(            max = i;)59.5 622.4 ms
+(        })59.5 612.4 ms
+(        guessed = max;)59.5 602.4 ms
+(    )59.5 592.4 ms
+(        for\()59.5 582.4 ms
+0.502 g
+(int)s
+0 g
+( i = )s
+0.753 0 0.753 r
+(0)s
+0 g
+(; i < numbers.length;i++\){ )s
+(          if\(numbers[i] == guessed\))59.5 572.4 ms
+(            numbers[i] = -)59.5 562.4 ms
+0.753 0 0.753 r
+(1)s
+0 g
+(;)s
+(        })59.5 552.4 ms
+(        continue;)59.5 542.4 ms
+(      })59.5 532.4 ms
+(    })59.5 522.4 ms
+(  })59.5 512.4 ms
+(  //A method to check if the zip code is already found)59.5 502.4 ms
+(  )59.5 492.4 ms
+0.502 g
+(public)s
+0 g
+( )s
+0.502 g
+(static)s
+0 g
+( )s
+0.502 g
+(boolean)s
+0 g
+( checkIfFound\(\))s
+(  {)59.5 482.4 ms
+(    for\()59.5 472.4 ms
+0.502 g
+(int)s
+0 g
+( i = )s
+0.753 0 0.753 r
+(0)s
+0 g
+(; i < GuessedZip.length; i++\){)s
+(      if\(GuessedZip[i] == -)59.5 462.4 ms
+0.753 0 0.753 r
+(1)s
+0 g
+(\))s
+(        return )59.5 452.4 ms
+0.753 0 0.753 r
+(false)s
+0 g
+(;)s
+(    })59.5 442.4 ms
+(    return )59.5 432.4 ms
+0.753 0 0.753 r
+(true)s
+0 g
+(;)s
+(  })59.5 422.4 ms
+(  //A method to calculate the predictive probability)59.5 402.4 ms
+(  )59.5 392.4 ms
+0.502 g
+(public)s
+0 g
+( )s
+0.502 g
+(static)s
+0 g
+( )s
+0.502 g
+(double)s
+0 g
+( evidenceProb\()s
+0.502 g
+(char)s
+0 g
+( a\))s
+(  {)59.5 382.4 ms
+(    )59.5 372.4 ms
+0.502 g
+(double)s
+0 g
+( prob = )s
+0.753 0 0.753 r
+(0.0)s
+0 g
+(;)s
+(    )59.5 362.4 ms
+0.502 g
+(double)s
+0 g
+( total = )s
+0.753 0 0.753 r
+(0.0)s
+0 g
+(;)s
+(    )59.5 352.4 ms
+0.502 g
+(boolean)s
+0 g
+( good = )s
+0.753 0 0.753 r
+(true)s
+0 g
+(;)s
+(    )59.5 342.4 ms
+0.502 g
+(double)s
+0 g
+( denominator = denominator\(\);)s
+(    for\()59.5 332.4 ms
+0.502 g
+(int)s
+0 g
+( i = )s
+0.753 0 0.753 r
+(0)s
+0 g
+(; i < zip.length; i++\){)s
+(      good = )59.5 322.4 ms
+0.753 0 0.753 r
+(true)s
+0 g
+(;)s
+(      //This for loop checks things already guessed)59.5 312.4 ms
+(      for\()59.5 302.4 ms
+0.502 g
+(int)s
+0 g
+( j = )s
+0.753 0 0.753 r
+(0)s
+0 g
+(; j < )s
+0.753 0 0.753 r
+(5)s
+0 g
+(; j++\){)s
+(        //The place is guessed and correct)59.5 292.4 ms
+(        if\(GuessedZip[j] != -)59.5 282.4 ms
+0.753 0 0.753 r
+(1)s
+0 g
+(\){)s
+(          //If condition not satisfied, go to next zip code)59.5 272.4 ms
+(          if\(zip[i].charAt\(j\) != \()59.5 262.4 ms
+0.753 0 0.753 r
+('0')s
+0 g
+( + GuessedZip[j]\)\){ )s
+(            good = )59.5 252.4 ms
+0.753 0 0.753 r
+(false)s
+0 g
+(;)s
+(            break;)59.5 242.4 ms
+(          })59.5 232.4 ms
+(        })59.5 222.4 ms
+(        //Things that have not guessed)59.5 212.4 ms
+(        if\(GuessedZip[j] == -)59.5 202.4 ms
+0.753 0 0.753 r
+(1)s
+0 g
+(\){)s
+(          for \()59.5 192.4 ms
+0.502 g
+(int)s
+0 g
+( k = )s
+0.753 0 0.753 r
+(0)s
+0 g
+(; k < )s
+0.753 0 0.753 r
+(10)s
+0 g
+(; k++\){)s
+(            //The number that has been guessed  )59.5 182.4 ms
+(            if\(numbers[k] == -)59.5 172.4 ms
+0.753 0 0.753 r
+(1)s
+0 g
+(\){)s
+(              if\(zip[i].charAt\(j\) == \()59.5 162.4 ms
+0.753 0 0.753 r
+('0')s
+0 g
+(+k\)\){          )s
+(                good = )59.5 152.4 ms
+0.753 0 0.753 r
+(false)s
+0 g
+(;)s
+(                break;)59.5 142.4 ms
+(              })59.5 132.4 ms
+(            })59.5 122.4 ms
+(          })59.5 112.4 ms
+(        })59.5 102.4 ms
+(      }//End of for loop)59.5 92.4 ms
+(      //If it pass the test)59.5 82.4 ms
+(      if\(good\){)59.5 72.4 ms
+(        //Reach here if it's still good)59.5 62.4 ms
+(        for\()59.5 52.4 ms
+0.502 g
+(int)s
+0 g
+( j = )s
+0.753 0 0.753 r
+(0)s
+0 g
+(; j < )s
+0.753 0 0.753 r
+(5)s
+0 g
+(; j++\){)s
+re sp
+%%PageTrailer
+%%Page: 5 5
+%%BeginPageSetup
+sv
+0 g
+F0 sf
+%%EndPageSetup
+F1 sf
+(hw2.java                                                                      Page 5)59.5 792.4 ms
+F0 sf
+(          if\(GuessedZip[j] == -)59.5 772.4 ms
+0.753 0 0.753 r
+(1)s
+0 g
+(\){)s
+(            if\(zip[i].charAt\(j\) == a\){)59.5 762.4 ms
+(              total = )59.5 752.4 ms
+0.753 0 0.753 r
+(1)s
+0 g
+(*population[i];)s
+(              //System.out.println\("zip: " + zip[i] + "total: " + total\);)59.5 742.4 ms
+(              prob += total/denominator;)59.5 732.4 ms
+(              break;)59.5 722.4 ms
+(            })59.5 712.4 ms
+(          })59.5 702.4 ms
+(        })59.5 692.4 ms
+(      }//End of if good)59.5 682.4 ms
+(    }//End of for loop through zip)59.5 672.4 ms
+(    return prob/PopTotal;)59.5 662.4 ms
+(  })59.5 652.4 ms
+( )59.5 642.4 ms
+(  //A method to calcuated the denominator of the posterior probability)59.5 632.4 ms
+(  )59.5 622.4 ms
+0.502 g
+(public)s
+0 g
+( )s
+0.502 g
+(static)s
+0 g
+( )s
+0.502 g
+(double)s
+0 g
+( denominator\(\){)s
+(    )59.5 612.4 ms
+0.502 g
+(double)s
+0 g
+( denominator = )s
+0.753 0 0.753 r
+(0.0)s
+0 g
+(;)s
+(    )59.5 602.4 ms
+0.502 g
+(boolean)s
+0 g
+( good = )s
+0.753 0 0.753 r
+(true)s
+0 g
+(;)s
+(    for\()59.5 592.4 ms
+0.502 g
+(int)s
+0 g
+( i = )s
+0.753 0 0.753 r
+(0)s
+0 g
+(; i < zip.length; i++\){)s
+(      good = )59.5 582.4 ms
+0.753 0 0.753 r
+(true)s
+0 g
+(;)s
+(      for\()59.5 572.4 ms
+0.502 g
+(int)s
+0 g
+( j = )s
+0.753 0 0.753 r
+(0)s
+0 g
+(; j < )s
+0.753 0 0.753 r
+(5)s
+0 g
+(; j++\){)s
+(        if\(GuessedZip[j] != -)59.5 562.4 ms
+0.753 0 0.753 r
+(1)s
+0 g
+(\){)s
+(          if\(zip[i].charAt\(j\) != \()59.5 552.4 ms
+0.502 g
+(char)s
+0 g
+(\)\()s
+0.753 0 0.753 r
+('0')s
+0 g
+( + GuessedZip[j]\)\){)s
+(            good = )59.5 542.4 ms
+0.753 0 0.753 r
+(false)s
+0 g
+(;)s
+(            break;)59.5 532.4 ms
+(          })59.5 522.4 ms
+(        })59.5 512.4 ms
+(        else{)59.5 502.4 ms
+(          for\()59.5 492.4 ms
+0.502 g
+(int)s
+0 g
+( k = )s
+0.753 0 0.753 r
+(0)s
+0 g
+(; k < )s
+0.753 0 0.753 r
+(10)s
+0 g
+(; k++\){)s
+(            if\(numbers[k] == -)59.5 482.4 ms
+0.753 0 0.753 r
+(1)s
+0 g
+(\){)s
+(              if\(zip[i].charAt\(j\) == \()59.5 472.4 ms
+0.502 g
+(char)s
+0 g
+(\)\()s
+0.753 0 0.753 r
+('0')s
+0 g
+(+k\)\){)s
+(                good = )59.5 462.4 ms
+0.753 0 0.753 r
+(false)s
+0 g
+(;)s
+(                break;)59.5 452.4 ms
+(              })59.5 442.4 ms
+(            })59.5 432.4 ms
+(          })59.5 422.4 ms
+(        })59.5 412.4 ms
+(      })59.5 402.4 ms
+(      if\(good\){)59.5 392.4 ms
+(        denominator += population[i];)59.5 382.4 ms
+(      })59.5 372.4 ms
+(    })59.5 362.4 ms
+(    return denominator/PopTotal;)59.5 352.4 ms
+(  })59.5 342.4 ms
+(  //Get the probability of the every first guess when no evidence needed)59.5 322.4 ms
+(  )59.5 312.4 ms
+0.502 g
+(public)s
+0 g
+( )s
+0.502 g
+(static)s
+0 g
+( )s
+0.502 g
+(double)s
+0 g
+( getProb\()s
+0.502 g
+(char)s
+0 g
+( a\){)s
+(    )59.5 302.4 ms
+0.502 g
+(double)s
+0 g
+( total = )s
+0.753 0 0.753 r
+(0)s
+0 g
+(;)s
+(    for\()59.5 292.4 ms
+0.502 g
+(int)s
+0 g
+( i = )s
+0.753 0 0.753 r
+(0)s
+0 g
+(; i < zip.length; i++\){)s
+(      for\()59.5 282.4 ms
+0.502 g
+(int)s
+0 g
+( j = )s
+0.753 0 0.753 r
+(0)s
+0 g
+(; j < )s
+0.753 0 0.753 r
+(5)s
+0 g
+(; j++\){)s
+(        if\(zip[i].charAt\(j\) == a\){)59.5 272.4 ms
+(          total += )59.5 262.4 ms
+0.753 0 0.753 r
+(1)s
+0 g
+( * population[i];)s
+(          break;)59.5 252.4 ms
+(        })59.5 242.4 ms
+(      })59.5 232.4 ms
+(    } )59.5 222.4 ms
+(    return total/PopTotal;)59.5 212.4 ms
+(  })59.5 202.4 ms
+(  //An internal class for finding the most populated zip code)59.5 192.4 ms
+(  )59.5 182.4 ms
+0.502 g
+(static)s
+0 g
+( )s
+0.502 g
+(class)s
+0 g
+( Pair )s
+0.502 g
+(implements)s
+0 g
+( Comparable{)s
+(    )59.5 172.4 ms
+0.502 g
+(public)s
+0 g
+( String zip;)s
+(    )59.5 162.4 ms
+0.502 g
+(public)s
+0 g
+( Integer pop;)s
+(    )59.5 142.4 ms
+0.502 g
+(public)s
+0 g
+( Pair\(String zip, )s
+0.502 g
+(int)s
+0 g
+( pop\){)s
+(      )59.5 132.4 ms
+0.502 g
+(this)s
+0 g
+(.zip = zip;)s
+(      )59.5 122.4 ms
+0.502 g
+(this)s
+0 g
+(.pop = pop;)s
+(    })59.5 112.4 ms
+(    )59.5 102.4 ms
+0.502 g
+(public)s
+0 g
+( )s
+0.502 g
+(int)s
+0 g
+( compareTo\(Object o\))s
+(    {)59.5 92.4 ms
+(      Pair a2 = \(Pair\)o;)59.5 82.4 ms
+(      if\()59.5 72.4 ms
+0.502 g
+(this)s
+0 g
+(.pop > a2.pop\))s
+(        return )59.5 62.4 ms
+0.753 0 0.753 r
+(1)s
+0 g
+(;)s
+(      else if \()59.5 52.4 ms
+0.502 g
+(this)s
+0 g
+(.pop < a2.pop\))s
+re sp
+%%PageTrailer
+%%Page: 6 6
+%%BeginPageSetup
+sv
+0 g
+F0 sf
+%%EndPageSetup
+F1 sf
+(hw2.java                                                                      Page 6)59.5 792.4 ms
+F0 sf
+(        return -)59.5 772.4 ms
+0.753 0 0.753 r
+(1)s
+0 g
+(;)s
+(      else )59.5 762.4 ms
+(        return )59.5 752.4 ms
+0.753 0 0.753 r
+(0)s
+0 g
+(;)s
+(    })59.5 742.4 ms
+(  })59.5 732.4 ms
+(})59.5 722.4 ms
+re sp
+%%PageTrailer
+%%Trailer
+%%Pages: 6
+%%EOF
+
